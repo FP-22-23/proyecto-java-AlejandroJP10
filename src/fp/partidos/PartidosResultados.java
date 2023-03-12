@@ -45,5 +45,6 @@ import fp.utiles.Checkers;
 			Checkers.check("El valor de los puntos no puede ser negativo", puntosRuns>=0);
 		}
 		
+		//Getters
 		
 }
