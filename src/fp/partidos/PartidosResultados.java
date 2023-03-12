@@ -1,6 +1,8 @@
 package fp.partidos;
 import java.time.Duration;
 
+import fp.utiles.Checkers;
+
 	public class PartidosResultados {
 		private Integer id;
 		private Integer temporada;
@@ -39,7 +41,9 @@ import java.time.Duration;
 			
 		}
 		private void checkPuntosRuns(Integer puntosRuns) {
-			//
+			//Los puntos no pueden ser negativos 
+			Checkers.check("El valor de los puntos no puede ser negativo", puntosRuns>=0);
 		}
-
+		
+		
 }
